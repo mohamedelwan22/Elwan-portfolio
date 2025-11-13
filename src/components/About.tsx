@@ -47,7 +47,7 @@ const About = () => {
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
             A unique blend of healthcare background and tech expertise
           </p>
-        </div>
+        </motion.div>
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Image with 3D effect */}
@@ -92,30 +92,38 @@ const About = () => {
                 <span className="font-semibold">Sass</span>, and{" "}
                 <span className="font-semibold">modern web technologies</span>.
               </p>
-            </motion.div>
+            </div>
 
             {/* Highlights */}
             <div className="grid gap-4 mt-8">
               {highlights.map((item, index) => (
                 <Card
                   key={index}
-                  className="p-4 glass-effect hover:shadow-medium transition-all duration-300 hover-scale border-l-4 border-l-primary"
+                  className="p-4 glass-card hover:shadow-medium transition-all duration-300 hover-scale border-l-4 border-l-primary group"
                 >
-                  <div className="flex items-start gap-4">
-                    <div className="p-2 rounded-lg bg-primary/10">
+                  <motion.div
+                    className="flex items-start gap-4"
+                    whileHover={{ x: 10 }}
+                    transition={{ duration: 0.3 }}
+                  >
+                    <motion.div
+                      className="p-2 rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-colors"
+                      whileHover={{ rotate: 360 }}
+                      transition={{ duration: 0.5 }}
+                    >
                       <item.icon className="h-6 w-6 text-primary" />
-                    </div>
+                    </motion.div>
                     <div>
                       <h3 className="font-semibold text-lg mb-1">{item.title}</h3>
                       <p className="text-muted-foreground text-sm">
                         {item.description}
                       </p>
                     </div>
-                  </div>
+                  </motion.div>
                 </Card>
               ))}
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
