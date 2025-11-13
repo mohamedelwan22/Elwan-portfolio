@@ -60,10 +60,11 @@ const About = () => {
             <div className="relative group">
               <div className="absolute inset-0 bg-gradient-primary rounded-2xl blur-xl opacity-20 group-hover:opacity-30 transition-opacity duration-300"></div>
               <img
-                src="imgs/linkedin.jpg"
-                alt="Mohamed Elwan workspace"
-                className="relative rounded-2xl shadow-strong w-full h-auto hover-scale"
-              />
+              src="/imgs/linkedin.jpg"
+              alt="Mohamed Elwan workspace"
+              className="relative rounded-2xl shadow-strong w-full h-auto hover-scale"
+            />
+
             </div>
           </motion.div>
 
@@ -74,25 +75,7 @@ const About = () => {
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            {/* <div className="prose prose-lg dark:prose-invert">
-              <p className="text-foreground/90 leading-relaxed">
-                I'm a <span className="text-primary font-semibold">nursing graduate</span> who 
-                discovered a passion for <span className="text-primary font-semibold">web development</span>. 
-                This unique journey has given me a distinctive perspective on creating digital experiences.
-              </p>
-              <p className="text-foreground/90 leading-relaxed">
-                I love building websites that blend{" "}
-                <span className="text-secondary font-semibold">creativity</span>,{" "}
-                <span className="text-secondary font-semibold">technology</span>, and{" "}
-                <span className="text-secondary font-semibold">human empathy</span>.
-              </p>
-              <p className="text-foreground/90 leading-relaxed">
-                Currently focused on creating modern web applications with{" "}
-                <span className="font-semibold">React</span>,{" "}
-                <span className="font-semibold">Sass</span>, and{" "}
-                <span className="font-semibold">modern web technologies</span>.
-              </p>
-            </div> */}
+            
             <div className="prose prose-lg dark:prose-invert">
                 <p className="text-foreground/90 leading-relaxed">
                   My journey began in <span className="text-secondary font-semibold">healthcare</span>, where precision and empathy shaped how I
