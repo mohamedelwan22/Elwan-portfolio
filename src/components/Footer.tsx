@@ -54,9 +54,7 @@ const Footer = () => {
           {/* Copyright */}
           <div className="text-center">
             <p className="text-sm text-muted-foreground flex items-center gap-1">
-              © {currentYear} Mohamed Elwan — Made with{" "}
-              <Heart className="h-4 w-4 text-secondary inline fill-current" />{" "}
-              in Egypt
+              © {currentYear} Devloped by Mohamed Elwan — Made in Egypt
             </p>
             <p className="text-xs text-muted-foreground mt-1">
               All Rights Reserved

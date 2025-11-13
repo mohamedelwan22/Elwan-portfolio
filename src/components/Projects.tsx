@@ -13,40 +13,40 @@ const Projects = () => {
 
   const projects = [
     {
-      title: "E-Commerce Platform",
+      title: "Movies Platform",
       description:
-        "Modern online shopping experience with cart functionality and responsive design",
+        "Noxe is a modern movie and TV show web platform that lets users browse trending titles, search for their favorites, and view detailed information with responsive design and interactive UI.",
       technologies: ["React", "Sass", "JavaScript", "Bootstrap"],
-      image: "https://images.unsplash.com/photo-1557821552-17105176677c?w=800&h=600&fit=crop",
-      github: "https://github.com/mohamedelwan22",
-      demo: "#",
+      image: "imgs/movies.jpg",
+      github: "https://github.com/mohamedelwan22/noxe",
+      demo: "https://noxe-flex.netlify.app",
     },
     {
-      title: "Healthcare Dashboard",
+      title: "SoftwareDashboard",
       description:
-        "Medical data visualization tool combining my nursing and tech background",
-      technologies: ["React", "JavaScript", "CSS3", "Chart.js"],
+        "A dynamic and interactive dashboard web application that visualizes data through charts, tables, and analytics, designed for responsive and user-friendly insights.",
+      technologies: ["HTML", "FontAwesome", "CSS3", "GoogleFont", "Git", "Github"],
       image: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=800&h=600&fit=crop",
-      github: "https://github.com/mohamedelwan22",
-      demo: "#",
+      github: "https://github.com/mohamedelwan22/Elwan-Dashboard/tree/master",
+      demo: "https://dashboard-elwan.netlify.app/",
     },
     {
       title: "Portfolio Template",
       description:
-        "Clean and modern portfolio template for developers and creatives",
-      technologies: ["React", "Sass", "Bootstrap", "Git"],
+        "A modern software company website showcasing services, projects, and solutions, with a professional, responsive design that highlights innovation and technical expertise.",
+      technologies: ["HTML", "FontAwesome", "CSS3", "GoogleFont", "Git", "Github"],
       image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800&h=600&fit=crop",
-      github: "https://github.com/mohamedelwan22",
-      demo: "#",
+      github: "https://github.com/mohamedelwan22/Elwan-company/tree/master",
+      demo: "https://elwan-comp.netlify.app/",
     },
     {
-      title: "Task Management App",
+      title: "Islamic School",
       description:
-        "Intuitive task tracker with drag-and-drop functionality and categories",
-      technologies: ["React", "JavaScript", "CSS3", "HTML5"],
-      image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=800&h=600&fit=crop",
-      github: "https://github.com/mohamedelwan22",
-      demo: "#",
+        "An informative and interactive Islamic school website providing details about programs, courses, events, and community activities, designed with a responsive and user-friendly interface.",
+      technologies: ["HTML", "FontAwesome", "CSS3", "Bootstrap", "GoogleFont", "Git", "Github"],
+      image: "imgs/islamic-school.jpeg",
+      github: "https://github.com/mohamedelwan22/school/tree/master",
+      demo: "https://islamic-schol.netlify.app/",
     },
   ];
 

@@ -24,7 +24,8 @@ const Skills = () => {
         { name: "Sass/SCSS", level: 85 },
         { name: "Bootstrap", level: 90 },
         { name: "Responsive Design", level: 95 },
-        { name: "Tailwind CSS", level: 75 },
+        { name: "Ai Usage and Integration", level: 90 },
+        // { name: "Tailwind CSS", level: 75 },
       ],
     },
     {

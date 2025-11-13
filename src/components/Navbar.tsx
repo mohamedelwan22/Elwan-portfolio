@@ -57,7 +57,7 @@ const Navbar = () => {
             href="#home"
             className="text-xl md:text-2xl font-bold text-gradient hover-scale"
           >
-            ME
+            MohamedElwan
           </a>
 
           {/* Desktop Navigation */}
