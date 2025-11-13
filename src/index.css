@@ -29,7 +29,7 @@ All colors MUST be HSL.
     --muted: 210 40% 96%;
     --muted-foreground: 215 16% 47%;
 
-    --accent: 195 91% 48%;
+    --accent: 280 80% 58%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
@@ -39,17 +39,26 @@ All colors MUST be HSL.
     --input: 215 20% 88%;
     --ring: 195 91% 48%;
 
-    --radius: 0.75rem;
+    --radius: 1rem;
 
-    --gradient-primary: linear-gradient(135deg, hsl(195, 91%, 48%), hsl(188, 94%, 48%));
-    --gradient-hero: linear-gradient(135deg, hsl(195, 91%, 48%) 0%, hsl(188, 94%, 48%) 50%, hsl(24, 95%, 55%) 100%);
-    --gradient-card: linear-gradient(180deg, hsl(0, 0%, 100%) 0%, hsl(210, 40%, 99%) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(195, 91%, 48%), hsl(280, 80%, 58%));
+    --gradient-hero: linear-gradient(135deg, hsl(195, 91%, 48%) 0%, hsl(280, 80%, 58%) 50%, hsl(24, 95%, 55%) 100%);
+    --gradient-card: linear-gradient(145deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.7) 100%);
+    --gradient-mesh: radial-gradient(at 40% 20%, hsl(195, 91%, 68%) 0, transparent 50%),
+                     radial-gradient(at 80% 0%, hsl(280, 80%, 78%) 0, transparent 50%),
+                     radial-gradient(at 0% 50%, hsl(24, 95%, 75%) 0, transparent 50%);
     
-    --shadow-soft: 0 2px 8px -2px hsl(195, 91%, 48%, 0.08);
-    --shadow-medium: 0 8px 20px -4px hsl(195, 91%, 48%, 0.12);
-    --shadow-strong: 0 16px 40px -8px hsl(195, 91%, 48%, 0.16);
+    --glass-bg: rgba(255, 255, 255, 0.7);
+    --glass-border: rgba(255, 255, 255, 0.8);
+    
+    --shadow-soft: 0 2px 8px -2px rgba(0, 0, 0, 0.08);
+    --shadow-medium: 0 8px 20px -4px rgba(0, 0, 0, 0.12);
+    --shadow-strong: 0 16px 40px -8px rgba(0, 0, 0, 0.16);
+    --shadow-glow: 0 0 40px rgba(14, 165, 233, 0.2);
+    --shadow-neon: 0 0 20px rgba(139, 92, 246, 0.4), 0 0 40px rgba(139, 92, 246, 0.2);
 
-    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
 
   .dark {
@@ -74,7 +83,7 @@ All colors MUST be HSL.
     --muted: 217 33% 20%;
     --muted-foreground: 215 20% 65%;
 
-    --accent: 195 91% 48%;
+    --accent: 280 80% 58%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 63% 31%;
@@ -84,15 +93,24 @@ All colors MUST be HSL.
     --input: 217 33% 24%;
     --ring: 195 91% 48%;
 
-    --gradient-primary: linear-gradient(135deg, hsl(195, 91%, 48%), hsl(188, 94%, 48%));
-    --gradient-hero: linear-gradient(135deg, hsl(195, 91%, 48%) 0%, hsl(188, 94%, 48%) 50%, hsl(24, 95%, 55%) 100%);
-    --gradient-card: linear-gradient(180deg, hsl(217, 33%, 17%) 0%, hsl(217, 33%, 20%) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(195, 91%, 48%), hsl(280, 80%, 58%));
+    --gradient-hero: linear-gradient(135deg, hsl(222, 47%, 11%) 0%, hsl(280, 60%, 25%) 50%, hsl(195, 91%, 25%) 100%);
+    --gradient-card: linear-gradient(145deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
+    --gradient-mesh: radial-gradient(at 40% 20%, hsl(195, 91%, 28%) 0, transparent 50%),
+                     radial-gradient(at 80% 0%, hsl(280, 80%, 38%) 0, transparent 50%),
+                     radial-gradient(at 0% 50%, hsl(24, 95%, 35%) 0, transparent 50%);
     
-    --shadow-soft: 0 2px 8px -2px hsl(0, 0%, 0%, 0.2);
-    --shadow-medium: 0 8px 20px -4px hsl(0, 0%, 0%, 0.3);
-    --shadow-strong: 0 16px 40px -8px hsl(0, 0%, 0%, 0.4);
+    --glass-bg: rgba(255, 255, 255, 0.05);
+    --glass-border: rgba(255, 255, 255, 0.1);
+    
+    --shadow-soft: 0 2px 8px -2px rgba(0, 0, 0, 0.3);
+    --shadow-medium: 0 8px 20px -4px rgba(0, 0, 0, 0.4);
+    --shadow-strong: 0 16px 40px -8px rgba(0, 0, 0, 0.5);
+    --shadow-glow: 0 0 40px rgba(14, 165, 233, 0.3);
+    --shadow-neon: 0 0 20px rgba(139, 92, 246, 0.5), 0 0 40px rgba(139, 92, 246, 0.3);
 
-    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
 }
 
@@ -112,16 +130,51 @@ All colors MUST be HSL.
 }
 
 @layer components {
+  .glass-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--shadow-medium);
+  }
+
   .hover-scale {
-    @apply transition-transform duration-300 hover:scale-105;
+    transition: var(--transition-smooth);
+  }
+
+  .hover-scale:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: var(--shadow-strong);
   }
 
   .hover-glow {
-    @apply transition-shadow duration-300 hover:shadow-[0_0_20px_rgba(14,165,233,0.3)];
+    @apply transition-shadow duration-300;
+  }
+  
+  .hover-glow:hover {
+    box-shadow: var(--shadow-glow);
   }
 
   .text-gradient {
-    @apply bg-gradient-to-r from-primary via-primary-light to-secondary bg-clip-text text-transparent;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .neon-border {
+    border: 2px solid transparent;
+    background: linear-gradient(var(--background), var(--background)) padding-box,
+                var(--gradient-primary) border-box;
+  }
+
+  .floating {
+    animation: floating 3s ease-in-out infinite;
+  }
+
+  .rotate-3d {
+    animation: rotate3d 20s linear infinite;
+    transform-style: preserve-3d;
   }
 
   .animate-fade-in {
@@ -139,11 +192,26 @@ All colors MUST be HSL.
 
 @layer utilities {
   .glass-effect {
-    @apply bg-white/80 dark:bg-card/80 backdrop-blur-lg;
+    @apply bg-white/70 dark:bg-card/50 backdrop-blur-xl;
   }
 
   .section-padding {
     @apply py-20 px-6 md:px-12 lg:px-24;
+  }
+
+  .parallax-bg {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .perspective-container {
+    perspective: 1000px;
+  }
+
+  .transform-3d {
+    transform-style: preserve-3d;
   }
 }
 
@@ -177,5 +245,32 @@ All colors MUST be HSL.
   to {
     opacity: 1;
     transform: scale(1);
+  }
+}
+
+@keyframes floating {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes rotate3d {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(14, 165, 233, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(14, 165, 233, 0.6);
   }
 }
