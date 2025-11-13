@@ -17,7 +17,7 @@ const Projects = () => {
       description:
         "Noxe is a modern movie and TV show web platform that lets users browse trending titles, search for their favorites, and view detailed information with responsive design and interactive UI.",
       technologies: ["React", "Sass", "JavaScript", "Bootstrap"],
-      image: "imgs/movies.jpg",
+      image: "/imgs/movies.jpg",
       github: "https://github.com/mohamedelwan22/noxe",
       demo: "https://noxe-flex.netlify.app",
     },
@@ -44,7 +44,7 @@ const Projects = () => {
       description:
         "An informative and interactive Islamic school website providing details about programs, courses, events, and community activities, designed with a responsive and user-friendly interface.",
       technologies: ["HTML", "FontAwesome", "CSS3", "Bootstrap", "GoogleFont", "Git", "Github"],
-      image: "imgs/islamic-school.jpeg",
+      image: "/imgs/islamic-school.jpeg",
       github: "https://github.com/mohamedelwan22/school/tree/master",
       demo: "https://islamic-schol.netlify.app/",
     },
