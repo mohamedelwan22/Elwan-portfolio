@@ -22,7 +22,7 @@ const Footer = () => {
     {
       name: "Telegram",
       icon: Send,
-      url: "https://t.me/Elwan01159279716",
+      url: "https://t.me/MELWAN7497",
     },
     {
       name: "WhatsApp",
@@ -54,7 +54,7 @@ const Footer = () => {
           {/* Copyright */}
           <div className="text-center">
             <p className="text-sm text-muted-foreground flex items-center gap-1">
-              © {currentYear} Devloped by Mohamed Elwan — Made in Egypt
+              © {currentYear} Devloped by Mohamed Elwan in Egypt
             </p>
             <p className="text-xs text-muted-foreground mt-1">
               All Rights Reserved

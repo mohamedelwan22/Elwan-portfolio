@@ -23,7 +23,7 @@ const Hero = () => {
     {
       name: "Telegram",
       icon: Send,
-      url: "https://t.me/Elwan01159279716",
+      url: "https://t.me/MELWAN7497",
     },
     {
       name: "WhatsApp",

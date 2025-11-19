@@ -37,15 +37,15 @@ const Contact = () => {
       url: "https://www.facebook.com/profile.php?id=100015772284206",
     },
     {
-      name: "Telegram",
-      icon: Send,
-      url: "https://t.me/Elwan01159279716",
-    },
-    {
-      name: "WhatsApp",
-      icon: MessageCircle,
-      url: "https://wa.me/201159279716",
-    },
+          name: "Telegram",
+          icon: Send,
+          url: "https://t.me/MELWAN7497",
+        },
+        {
+          name: "WhatsApp",
+          icon: MessageCircle,
+          url: "https://wa.me/201159279716",
+        },
   ];
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -262,7 +262,7 @@ const Contact = () => {
                       size="sm"
                       className="glass-card"
                     >
-                      <a href="https://t.me/Elwan01159279716" target="_blank" rel="noopener noreferrer">
+                      <a href="https://t.me/MELWAN7497" target="_blank" rel="noopener noreferrer">
                         <Send className="mr-2 h-4 w-4" />
                         Telegram
                       </a>
