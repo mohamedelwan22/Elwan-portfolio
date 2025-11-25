@@ -1,221 +1,75 @@
-# Noxe | Movie Discovery Platform
+# Mohamed Elwan | Front-End Developer
 
-## About Noxe
+## Project info
 
-**Noxe** is a modern movie discovery web application that lets users browse, search, and explore thousands of movies with detailed information, ratings, and recommendations. Built with a focus on user experience and performance, Noxe delivers a seamless platform for movie enthusiasts.
+**URL**: https://mohamed-elwan-portfolio.netlify.app/
 
-- 🎬 Discover trending, popular, and upcoming movies  
-- 🔍 Advanced search and filtering capabilities  
-- ⭐ Detailed movie information with ratings and reviews  
-- 💾 Save favorite movies to your personal watchlist  
-- 📱 Fully responsive design across all devices  
-- ⚡ Fast performance and smooth interactions  
+## About Me
+I'm a **Nursing Graduate turned Front-End Developer** with a passion for creating clean, responsive, and interactive web experiences. My unique background gives me a distinctive perspective on user experience, blending technology with empathy.
 
-## Key Features
+## How can I edit this code?
+- 💻 2 years of front-end development experience  
+- ⚛️ Proficient in **React**, **Sass**, **JavaScript**, **Bootstrap**, **TailwindCSS**  
+- 🎨 Passionate about **design, usability, and accessibility**  
+- 🌐 Building **modern web applications** with a focus on performance and responsiveness
 
-✨ **Movie Discovery**
-- Browse trending, popular, top-rated, and upcoming movies
-- Real-time API integration for up-to-date content
-
-🔎 **Search & Filter**
-- Search movies by title, genre, and release year
-- Filter results by popularity, rating, and release date
-
-📊 **Detailed Information**
-- Full movie details including synopsis, cast, director, and runtime
-- User ratings and review summaries
-- High-quality poster and backdrop images
-
-❤️ **Watchlist**
-- Save favorite movies for later
-- Manage and organize your personal collection
-
-📱 **Responsive Design**
-- Optimized for desktop, tablet, and mobile devices
-- Smooth navigation and intuitive interface
-
-⚙️ **Performance Optimized**
-- Fast loading times
-- Efficient API calls and data handling
-- Smooth animations and transitions
-
+There are several ways of editing your application.
 ## Technologies & Tools
-
-- **Frontend Framework:** React.js  
-- **Styling:** Sass, Bootstrap, TailwindCSS  
-- **State Management:** React Hooks (useState, useEffect)  
-- **API Integration:** TMDB API (The Movie Database)  
+- **Languages:** HTML5, CSS3, JavaScript, TypeScript  
+- **Frameworks & Libraries:** React, TailwindCSS, Sass, Framer Motion, Radix UI  
 - **Version Control:** Git, GitHub  
-- **Deployment:** Netlify  
-- **Other Tools:** VS Code, Figma, Postman  
+- **Other Tools:** VS Code, Figma, Netlify  
 
-## Technologies Used
+**Use Lovable**
+## Projects
 
+Simply visit the [My Project](https://mohamed-elwan-portfolio.netlify.app/
+) and start prompting.
+### [My Portfolio](https://github.com/mohamedelwan22/elwan-connects-web)
+**Description:** Personal portfolio showcasing my skills, projects, and professional experience.  
+**Technologies:** React, Sass, TailwindCSS, Framer Motion  
+**Demo:** [Live Site](#)  
+**GitHub:** [Repository](https://github.com/mohamedelwan22/elwan-connects-web)
+
+**Use your preferred IDE**
+*(Add more projects here in the same format)*
+
+If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Follow these steps:
+```sh
+# Step 1: Clone the repository using the project's Git URL.
+git clone <YOUR_GIT_URL>
+# Step 2: Navigate to the project directory.
+cd <YOUR_PROJECT_NAME>
+# Step 3: Install the necessary dependencies.
+npm i
+# Step 4: Start the development server with auto-reloading and an instant preview.
+npm run dev
 ```
-Frontend:
-├── React 18.x
-├── Sass (SCSS)
-├── Bootstrap 5
-├── TailwindCSS
-├── JavaScript ES6+
-└── Axios (API calls)
-
-Tools:
-├── Git & GitHub
-├── VS Code
-├── Figma (Design)
-└── Netlify (Hosting)
-```
-
-## Project Structure
-
-```
-noxe/
-├── public/
-│   ├── index.html
-│   └── favicon.ico
-├── src/
-│   ├── components/
-│   │   ├── MovieCard.jsx
-│   │   ├── MovieDetails.jsx
-│   │   ├── SearchBar.jsx
-│   │   ├── Navbar.jsx
-│   │   └── Watchlist.jsx
-│   ├── pages/
-│   │   ├── Home.jsx
-│   │   ├── MoviePage.jsx
-│   │   └── Watchlist.jsx
-│   ├── styles/
-│   │   ├── main.scss
-│   │   ├── components.scss
-│   │   └── responsive.scss
-│   ├── services/
-│   │   └── tmdbAPI.js
-│   ├── App.jsx
-│   └── index.js
-├── package.json
-└── README.md
-```
-
-## Getting Started
-
-### Prerequisites
-- Node.js (v14 or higher)
-- npm or yarn
-- TMDB API Key (Get it [here](https://www.themoviedb.org/settings/api))
-
-### Installation
-
-1. **Clone the repository**
-```bash
-git clone https://github.com/yourusername/noxe.git
-cd noxe
-```
-
-2. **Install dependencies**
-```bash
-npm install
-```
-
-3. **Create environment variables**
-Create a `.env` file in the root directory:
-```
-REACT_APP_TMDB_API_KEY=your_api_key_here
-REACT_APP_API_BASE_URL=https://api.themoviedb.org/3
-```
-
-4. **Start the development server**
-```bash
-npm start
-```
-
-5. **Open in browser**
-Navigate to `http://localhost:3000`
-
-## Available Scripts
-
-```bash
-# Start development server
-npm start
-
-# Build for production
-npm run build
-
-# Run tests
-npm test
-
-# Deploy to Netlify
-npm run deploy
-```
-
-## API Integration
-
-Noxe uses **TMDB API** (The Movie Database) for all movie data:
-
-- **Trending Movies:** Fetches current trending movies
-- **Search:** Full-text search across movie titles
-- **Movie Details:** Comprehensive information for each movie
-- **Similar Movies:** Get recommendations based on selected movie
-
-**API Endpoints Used:**
-- `/trending/movie/week` - Trending movies
-- `/movie/popular` - Popular movies
-- `/search/movie` - Search functionality
-- `/movie/{id}` - Movie details
-- `/movie/{id}/similar` - Similar movies
-
-## Features in Detail
-
-### 🎬 Movie Discovery
-Browse through curated collections of movies including trending, popular, top-rated, and upcoming releases with beautiful card layouts.
-
-### 🔍 Smart Search
-Search any movie and get instant results with filtering options by genre, rating, and release date.
-
-### ⭐ Detailed Information
-View comprehensive movie details including cast, crew, synopsis, runtime, budget, revenue, and user ratings.
-
-### 💾 Personal Watchlist
-Add movies to your watchlist and keep track of what you want to watch. Your watchlist is saved locally.
-
-### 📱 Responsive Interface
-Beautiful, mobile-first design that works flawlessly on all screen sizes from phones to desktop.
-
-## Performance Metrics
-
-- ⚡ First Contentful Paint: < 2s
-- 🚀 Lighthouse Score: 90+
-- 📊 SEO Optimized
-- ♿ WCAG Accessibility Compliant
-
-## Live Demo
-
-🌐 **[Visit Noxe Live](https://noxe-flex.netlify.app/#/login)**
-
-## GitHub Repository
-
-📂 **[View Source Code](https://github.com/yourusername/noxe)**
-
-## Contact & Support
-
-- **Email:** [your-email@example.com](elwan7497@gmail.com)  
-- **LinkedIn:** [Your LinkedIn Profile](www.linkedin.com/in/mohamed-elwan-frontend)  
-- **GitHub:** [@yourusername](https://github.com/mohamedelwan22))  
-
-
-## Future Enhancements
-
-- 🎤 Add voice search functionality
-- 🌙 Implement dark mode
-- 👥 User authentication and profiles
-- 💬 Community reviews and ratings
-- 🎥 Streaming provider information
-- 📧 Movie recommendations via email
-
-## License
-
-This project is open source and available under the [MIT License](LICENSE).
-
----
-
-**Built by [Mohamed Elwan] | Last Updated: 2025**
+**Edit a file directly in GitHub**
+- Navigate to the desired file(s).
+- Click the "Edit" button (pencil icon) at the top right of the file view.
+- Make your changes and commit the changes.
+**Use GitHub Codespaces**
+- Navigate to the main page of your repository.
+- Click on the "Code" button (green button) near the top right.
+- Select the "Codespaces" tab.
+- Click on "New codespace" to launch a new Codespace environment.
+- Edit files directly within the Codespace and commit and push your changes once you're done.
+## What technologies are used for this project?
+This project is built with:
+- Vite
+- TypeScript
+- React
+- shadcn-ui
+- Tailwind CSS
+## How can I deploy this project?
+Simply open [Lovable](https://lovable.dev/projects/fdc180bf-4df1-4b04-aeae-9d26b518d0f7) and click on Share -> Publish.
+## Can I connect a custom domain to my Lovable project?
+Yes, you can!
+To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+## Contact Me
+- **Email:** [elwan7497@gmail.com](mailto:elwan7497@gmail.com)  
+- **LinkedIn:** [linkedin.com/in/mohamed-elwan-9b41a8193](https://w)
