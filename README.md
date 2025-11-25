@@ -190,7 +190,7 @@ Beautiful, mobile-first design that works flawlessly on all screen sizes from ph
 
 ## Live Demo
 
-🌐 **[Visit Noxe Live](https://noxe-movie-app.netlify.app/)**
+🌐 **[Visit Noxe Live](noxe-flex.netlify.app)**
 
 ## GitHub Repository
 
