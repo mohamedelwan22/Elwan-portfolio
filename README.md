@@ -21,7 +21,8 @@ I'm a **Nursing Graduate turned Front-End Developer** with a passion for creatin
 ### [My Portfolio](https://github.com/mohamedelwan22/elwan-connects-web)
 **Description:** Personal portfolio showcasing my skills, projects, and professional experience.  
 **Technologies:** React, Sass, TailwindCSS, Framer Motion  
-**Demo:** [Live Site](#)  
+**Demo:** [[Live Site](https://mohamed-elwan-portfolio.netlify.app/
+)](#)  
 **GitHub:** [Repository](https://github.com/mohamedelwan22/elwan-connects-web)
 
 ### [Noxe](https://github.com/mohamedelwan22/noxe)
