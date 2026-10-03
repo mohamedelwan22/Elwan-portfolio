@@ -1,12 +1,12 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { motion } from "framer-motion";
-import { useInView } from "framer-motion";
+import { motion, useInView, useReducedMotion } from "framer-motion";
 import { useRef } from "react";
 
 const Skills = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const shouldReduceMotion = useReducedMotion();
 
   const skillCategories = [
     {
@@ -71,17 +71,17 @@ const Skills = () => {
         </motion.div>
 
         {/* Skill Categories */}
-        <div className="grid md:grid-cols-3 gap-8 mb-12">
-          {skillCategories.map((category, index) => (
+        <div className="grid md:grid-cols-3 gap-8 lg:gap-10 mb-12">
+          {skillCategories.map((category, categoryIndex) => (
             <motion.div
-              key={index}
+              key={categoryIndex}
               initial={{ opacity: 0, y: 50 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.6, delay: index * 0.15 }}
+              transition={{ duration: 0.6, delay: categoryIndex * 0.15 }}
             >
-              <Card className="p-6 glass-card hover:shadow-medium transition-all duration-300 h-full group">
+              <Card className="p-8 lg:p-10 glass-card hover:shadow-medium transition-all duration-300 h-full group">
                 <motion.div
-                  whileHover={{ scale: 1.02 }}
+                  whileHover={{ scale: 1.01 }}
                   transition={{ duration: 0.3 }}
                 >
                   <h3 className="text-xl font-bold mb-6 text-primary">
@@ -101,28 +101,30 @@ const Skills = () => {
                             {skill.level}%
                           </span>
                         </div>
-                        <div className="h-2 bg-muted rounded-full overflow-hidden relative">
+                        <div className="h-2.5 bg-muted rounded-full overflow-hidden relative">
                           <motion.div
-                            className="h-full bg-gradient-primary rounded-full"
-                            initial={{ width: 0 }}
-                            animate={isInView ? { width: `${skill.level}%` } : {}}
+                            className="h-full bg-gradient-primary rounded-full shadow-sm"
+                            initial={shouldReduceMotion ? { width: `${skill.level}%` } : { width: 0 }}
+                            animate={isInView || shouldReduceMotion ? { width: `${skill.level}%` } : { width: 0 }}
                             transition={{
-                              duration: 1,
-                              delay: 0.5 + i * 0.1,
-                              ease: "easeOut",
+                              duration: shouldReduceMotion ? 0 : 1.2,
+                              delay: shouldReduceMotion ? 0 : 0.5 + (categoryIndex * category.skills.length + i) * 0.08,
+                              ease: shouldReduceMotion ? undefined : [0.25, 0.1, 0.25, 1],
                             }}
                           >
-                            <motion.div
-                              className="h-full w-full"
-                              animate={{
-                                opacity: [0.5, 1, 0.5],
-                              }}
-                              transition={{
-                                duration: 2,
-                                repeat: Infinity,
-                                ease: "easeInOut",
-                              }}
-                            />
+                            {!shouldReduceMotion && (
+                              <motion.div
+                                className="h-full w-full"
+                                animate={{
+                                  opacity: [0.5, 1, 0.5],
+                                }}
+                                transition={{
+                                  duration: 2,
+                                  repeat: Infinity,
+                                  ease: "easeInOut",
+                                }}
+                              />
+                            )}
                           </motion.div>
                         </div>
                       </motion.div>
@@ -140,7 +142,7 @@ const Skills = () => {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.6 }}
         >
-          <Card className="p-8 glass-card hover:shadow-neon transition-all duration-500 relative overflow-hidden group">
+          <Card className="p-10 glass-card hover:shadow-neon transition-all duration-500 relative overflow-hidden group">
             <motion.div
               className="absolute inset-0 bg-gradient-primary opacity-0 group-hover:opacity-5 transition-opacity duration-500"
               animate={{
@@ -152,15 +154,15 @@ const Skills = () => {
                 ease: "linear",
               }}
             />
-            <div className="text-center mb-6 relative z-10">
-              <h3 className="text-2xl font-bold mb-2">
+            <div className="text-center mb-8 relative z-10">
+              <h3 className="text-2xl md:text-3xl font-bold mb-2">
                 Currently <span className="text-gradient">Learning</span>
               </h3>
-              <p className="text-muted-foreground">
+              <p className="text-muted-foreground text-base md:text-lg">
                 Always expanding my knowledge and staying up-to-date
               </p>
             </div>
-            <div className="flex flex-wrap gap-3 justify-center relative z-10">
+            <div className="flex flex-wrap gap-3 md:gap-4 justify-center relative z-10">
               {learningNow.map((item, index) => (
                 <motion.div
                   key={index}
@@ -176,7 +178,7 @@ const Skills = () => {
                 >
                   <Badge
                     variant="secondary"
-                    className="text-base px-4 py-2 bg-secondary/20 text-secondary hover:bg-secondary hover:text-secondary-foreground transition-all duration-300 cursor-pointer"
+                    className="text-sm md:text-base px-4 md:px-5 py-2 md:py-2.5 bg-secondary/20 text-secondary hover:bg-secondary hover:text-secondary-foreground transition-all duration-300 cursor-pointer shadow-sm"
                   >
                     {item}
                   </Badge>

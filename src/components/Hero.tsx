@@ -44,7 +44,7 @@ const Hero = () => {
       }}
     >
       {/* Animated Gradient Mesh Overlay */}
-      <div className="absolute inset-0 bg-background/85 dark:bg-background/92"></div>
+      <div className="absolute inset-0 bg-background/75 dark:bg-background/88"></div>
       <div 
         className="absolute inset-0 opacity-30 dark:opacity-40"
         style={{ background: 'var(--gradient-mesh)' }}
@@ -102,7 +102,7 @@ const Hero = () => {
           </motion.div>
           
           <motion.h1
-            className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6"
+            className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
@@ -112,7 +112,7 @@ const Hero = () => {
           </motion.h1>
 
           <motion.p
-            className="text-xl md:text-2xl lg:text-3xl text-muted-foreground font-medium mb-4"
+            className="text-xl md:text-2xl lg:text-3xl text-foreground/90 font-semibold mb-4 drop-shadow-sm"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.4 }}
@@ -121,7 +121,7 @@ const Hero = () => {
           </motion.p>
 
           <motion.p
-            className="text-base md:text-lg lg:text-xl text-muted-foreground max-w-2xl mx-auto mb-8"
+            className="text-base md:text-lg lg:text-xl text-foreground/85 max-w-2xl mx-auto mb-8 drop-shadow-sm"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.6 }}
@@ -140,7 +140,7 @@ const Hero = () => {
               <Button
                 asChild
                 size="lg"
-                className="bg-gradient-primary hover:opacity-90 transition-opacity text-base md:text-lg px-8 py-6 shadow-strong"
+                className="bg-cyan-500 hover:bg-cyan-600 text-white shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 text-base md:text-lg px-8 py-6 focus-visible:ring-2 focus-visible:ring-cyan-400 focus-visible:ring-offset-2"
               >
                 <a href="#projects">View My Work</a>
               </Button>
@@ -150,7 +150,7 @@ const Hero = () => {
                 asChild
                 variant="outline"
                 size="lg"
-                className="glass-card border-primary text-primary hover:bg-primary hover:text-primary-foreground text-base md:text-lg px-8 py-6"
+                className="bg-accent text-accent-foreground border-accent shadow-medium hover:bg-accent/90 hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 text-base md:text-lg px-8 py-6 focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2"
               >
                 <a href="#contact">Contact Me</a>
               </Button>

@@ -182,7 +182,7 @@ const Projects = () => {
                       <Button
                         asChild
                         size="sm"
-                        className="bg-gradient-primary hover:opacity-90"
+                        className="bg-blue-600 hover:bg-blue-700 text-white shadow-md focus-visible:ring-2 focus-visible:ring-blue-400 focus-visible:ring-offset-2 transition-all"
                       >
                         <a href={project.demo} target="_blank" rel="noopener noreferrer">
                           <ExternalLink className="mr-2 h-4 w-4" />
